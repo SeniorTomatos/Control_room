@@ -1,14 +1,16 @@
 package com.statrois.common.bean;
 
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
-@EqualsAndHashCode
-@NoArgsConstructor
+//@Getter
+//@Setter
+//@EqualsAndHashCode
+//@NoArgsConstructor
+@Data
 public class Board {
     private String name;
     private String location;
@@ -19,11 +21,15 @@ public class Board {
     private double y;
     private double angle;
 
-    private boolean noBusy() {
+    public boolean noBusy() {
         return !busy;
     }
 
-    private void calculatePosition(RoutePath routeDirection) {
+    public boolean hasRoute() {
+        return route != null;
+    }
+
+     public void calculatePosition(RoutePath routeDirection) {
         double t = routeDirection.getProgress() / 100;
 
         double toX = (1 - t) * routeDirection.getFrom().getX() + t * routeDirection.getTo().getX();

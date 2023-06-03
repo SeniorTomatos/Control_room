@@ -1,5 +1,6 @@
 package com.statrois.common.bean;
 
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -7,9 +8,10 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
-@Setter
-@EqualsAndHashCode
+//@Getter
+//@Setter
+//@EqualsAndHashCode
+@Data
 public class AirPort {
     private String name;
     private List<String> boards = new ArrayList<>();
