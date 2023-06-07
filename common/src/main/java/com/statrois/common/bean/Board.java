@@ -1,15 +1,8 @@
 package com.statrois.common.bean;
 
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-//@Getter
-//@Setter
-//@EqualsAndHashCode
-//@NoArgsConstructor
+
 @Data
 public class Board {
     private String name;

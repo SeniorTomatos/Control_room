@@ -19,7 +19,7 @@ public class AirPortsProvider {
 
     private final List<AirPort> ports = new ArrayList<>();
 
-    private AirPort findAirPortAndRemovePort(String boardName){
+    public AirPort findAirPortAndRemovePort(String boardName){
         AtomicReference<AirPort> res = new AtomicReference<>();
         ports.stream()
                 .filter(airPort -> airPort.getBoards().contains(boardName))
