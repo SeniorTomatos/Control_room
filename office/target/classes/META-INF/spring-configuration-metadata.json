@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "application",
+      "type": "com.statrois.office.provider.AirPortsProvider",
+      "sourceType": "com.statrois.office.provider.AirPortsProvider"
+    }
+  ],
+  "properties": [
+    {
+      "name": "application.ports",
+      "type": "java.util.List<com.statrois.common.bean.AirPort>",
+      "sourceType": "com.statrois.office.provider.AirPortsProvider"
+    }
+  ],
+  "hints": []
+}

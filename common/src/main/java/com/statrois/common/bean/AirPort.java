@@ -1,15 +1,12 @@
 package com.statrois.common.bean;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
-@Setter
-@EqualsAndHashCode
+@Data
 public class AirPort {
     private String name;
     private List<String> boards = new ArrayList<>();
